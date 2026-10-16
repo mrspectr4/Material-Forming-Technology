@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&amp;family=Barlow+Condensed:wght@400;600&amp;display=swap">
+  <link rel="stylesheet" href="_ds/industry-6e82ffa3-133a-41d5-b845-d5ac14e8463f/styles.css">
+  <script src="_ds/industry-6e82ffa3-133a-41d5-b845-d5ac14e8463f/_ds_bundle.js"></script>
+  <script>window.OM_SCENES = '[{"name":"Intro","dur":25,"desc":"Title card, the three material classes, theory vs application split"},{"name":"Fundamentals","dur":40,"desc":"Five-step ceramic sequence and additive definitions with deflocculant particle demo"},{"name":"Milling","dur":25,"desc":"Ball mill grinding and high-shear mixing"},{"name":"SlipCasting","dur":30,"desc":"Slip poured into plaster mold, wall builds, drained, mold opens"},{"name":"DoctorBlade","dur":18,"desc":"Doctor blade casts thin tape on a moving belt"},{"name":"Extrusion","dur":20,"desc":"Auger extruder, die, wire cutter, honeycomb die face"},{"name":"InjectionJigger","dur":22,"desc":"Ceramic injection molding and jiggering side by side"},{"name":"DryPressing","dur":20,"desc":"Punch-and-die dry pressing with pressure gauge and L:D limit"},{"name":"IsostaticHot","dur":25,"desc":"Isostatic pressing and hot pressing"},{"name":"Drying","dur":25,"desc":"Humidity-controlled drying shrinkage and Example 18.1 compensation"},{"name":"Sintering","dur":30,"desc":"Tunnel kiln and particle neck growth during sintering"},{"name":"Finishing","dur":16.1,"desc":"Diamond grinding of the fired part","nat":20},{"name":"GlassMelt","dur":12,"desc":"Glass melting furnace at 1000-1200 C"},{"name":"FloatGlass","dur":18,"desc":"Float line over molten tin into the lehr"},{"name":"DrawRoll","dur":12,"desc":"Flat glass rolled between powered rollers"},{"name":"Tubing","dur":13,"desc":"Tube drawn over a rotating hollow mandrel"},{"name":"Fibers","dur":20,"desc":"Platinum bushing fiber drawing and centrifugal glass wool"},{"name":"Blowing","dur":35,"desc":"Nine-step blank-and-blow bottle forming"},{"name":"PressBlow","dur":20,"desc":"Plunger pressing and press-and-blow jar"},{"name":"Centrifugal","dur":10,"desc":"Spinning mold drives melt up the wall"},{"name":"Sagging","dur":10,"desc":"Heated sheet sags into a mold by gravity"},{"name":"Annealing","dur":15,"desc":"Lehr temperature profile relieving residual stress"},{"name":"Tempering","dur":30,"desc":"Air-jet thermal tempering stress profile, then ion-exchange chemical tempering"},{"name":"Laminated","dur":15,"desc":"Projectile stopped by PMMA, glass and polycarbonate laminate"},{"name":"SCTheory","dur":30,"desc":"Grain alignment, critical temperatures, powder route"},{"name":"OPIT","dur":40,"desc":"Oxide-powder-in-tube: fill, pack, draw, roll, multifilament"},{"name":"Alternatives","dur":12,"desc":"Five alternative superconductor forming methods"},{"name":"Close","dur":8,"desc":"Summary card"}]';</script>
+  <script>window.OM_PLAYBACK = '{"mode":"times","count":2}';</script>
+  <style>html, body { margin: 0; height: 100%; background: #f2f2f3; } a { color: #416180; } a:hover { color: #2c455d; }</style>
+</helmet>
+<div style="width: 100%; height: 100vh; position: relative; background: #f2f2f3;">
+  <x-import component-from-global-scope="FormingVideo" from="./animations-v3.jsx ./forming-video.jsx" narration="{{ narration }}" captions="{{ captions }}" voice-rate="{{ voiceRate }}" style="position: absolute; inset: 0;" hint-size="100%,100%"></x-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;narration&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Narration&quot;},&quot;voiceRate&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:1.15,&quot;min&quot;:0.8,&quot;max&quot;:1.3,&quot;step&quot;:0.05,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Narration&quot;},&quot;captions&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Narration&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      narration: this.props.narration ?? true,
+      captions: this.props.captions ?? true,
+      voiceRate: this.props.voiceRate ?? 1,
+    };
+  }
+}
+</script>
+</body>
+</html>
